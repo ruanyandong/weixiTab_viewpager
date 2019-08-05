@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@android:color/white"
+    android:orientation="vertical">
+    <!--clipChildren="false"，默认是true
+        子view的绘制不受父view的限制-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:clipChildren="false">
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_gravity="center_vertical"
+            android:clipChildren="false"
+            android:layout_height="120dp"
+            android:id="@+id/vp_main"
+            />
+    </FrameLayout>
+
+</LinearLayout>
+
